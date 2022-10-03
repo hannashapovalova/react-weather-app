@@ -1,0 +1,21 @@
+.search-block {
+    background-color: lavender;
+}
+.left-block {
+    background-color: lightcoral;
+}
+.main-block {
+    background-color: lightsalmon;
+}
+.wind {
+    background-color: lightblue;
+}
+.humidity {
+    background-color: lightgoldenrodyellow;
+}
+.precipitation {
+    background-color: lightgrey;
+}
+.right-block {
+    background-color: lightgreen;
+}
