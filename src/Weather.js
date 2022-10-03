@@ -29,7 +29,6 @@ export default function Weather() {
               <li>Monday</li>
               <li>Monday</li>
               <li>Monday</li>
-              <li>Monday</li>
             </ul>
           </div>
         </div>
