@@ -22,12 +22,15 @@ export default function Weather() {
             <div className="row weather-block">
               <div className="col">
                 <div className="row">
-                  <h1>Funchal</h1>
-                  <h2>Tuesday 12:12</h2>
+                  <h1 className="current-city">Funchal</h1>
+                  <h2 className="current-date">Tuesday 12:12</h2>
                 </div>
                 <div className="row">
-                  <h2>22 °C</h2>
-                  <h2>Clear Sky</h2>
+                  <div className="temperature-block">
+                  <div className="current-temperature">22 ° </div>
+                  <div className="unit">C | F</div>
+                  </div>
+                  <h2 className="current-description">Clear Sky</h2>
                 </div>
               </div>
               <div className="col">
@@ -37,23 +40,23 @@ export default function Weather() {
             <div className="row weather-conditions-block">
               <div className="col-4 wind">
                 <p>Wind</p>
-                <p>4.15 m/h</p>
+                <p className="conditions-value">4.15 m/h</p>
               </div>
               <div className="col-4 humidity">
                 <p>Humidity</p>
-                <p>20%</p>
+                <p className="conditions-value">20%</p>
               </div>
               <div className="col-4 precipitation">
                 <p>Precipitation</p>
-                <p>2%</p>
+                <p className="conditions-value">2%</p>
               </div>
             </div>
           </div>
           <div className="col-4 forecast-block right-block">
             <div className="row forecast-element">
               <div className="col">
-                <h2>Monday</h2>
-                <p>24 °C</p>
+                <h2 className="forecast-date">Monday</h2>
+                <p className="forecast-temperature">24 °C</p>
               </div>
               <div className="col">
                 <p>IMAGE</p>
@@ -61,8 +64,8 @@ export default function Weather() {
             </div>
             <div className="row forecast-element">
               <div className="col">
-                <h2>Monday</h2>
-                <p>24 °C</p>
+                <h2 className="forecast-date">Monday</h2>
+                <p className="forecast-temperature">24 °C</p>
               </div>
               <div className="col">
                 <p>IMAGE</p>
@@ -70,8 +73,8 @@ export default function Weather() {
             </div>
             <div className="row forecast-element">
               <div className="col">
-                <h2>Monday</h2>
-                <p>24 °C</p>
+                <h2 className="forecast-date">Monday</h2>
+                <p className="forecast-temperature">24 °C</p>
               </div>
               <div className="col">
                 <p>IMAGE</p>
@@ -79,8 +82,8 @@ export default function Weather() {
             </div>
             <div className="row forecast-element">
               <div className="col">
-                <h2>Monday</h2>
-                <p>24 °C</p>
+                <h2 className="forecast-date">Monday</h2>
+                <p className="forecast-temperature">24 °C</p>
               </div>
               <div className="col">
                 <p>IMAGE</p>
@@ -88,8 +91,8 @@ export default function Weather() {
             </div>
             <div className="row forecast-element">
               <div className="col">
-                <h2>Monday</h2>
-                <p>24 °C</p>
+                <h2 className="forecast-date">Monday</h2>
+                <p className="forecast-temperature">24 °C</p>
               </div>
               <div className="col">
                 <p>IMAGE</p>
