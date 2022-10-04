@@ -12,6 +12,7 @@ function App() {
       <footer>
         This project was coded by{" "}
         <a 
+         className="link"
          href="https://www.linkedin.com/in/anna-shapovalova-63116b238/" 
          target="_blank" 
          rel="noreferrer">
@@ -19,11 +20,13 @@ function App() {
         </a> 
         {" "}and is open-sourced on{" "}
         <a
+         className="link"
          href="https://github.com/hannashapovalova/react-weather-app" 
          target="_blank" 
          rel="noreferrer">GitHub</a> 
         {" "}and hosted on{" "}
         <a
+         className="link"
          href="https://unique-kangaroo-bdf1ea.netlify.app/" 
          target="_blank" 
          rel="noreferrer">Netlify</a>
