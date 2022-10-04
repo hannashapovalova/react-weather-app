@@ -1,31 +1,46 @@
+:root {
+    --border-radius: 8px;
+}
+
+
 .search-block {
     background-color: lavender;
 }
-.left-block {
-    background-color: lightcyan
-}
-.main-block {
-    background-color: lightsalmon;
-}
-.wind {
-    background-color: lightblue;
-}
-.humidity {
-    background-color: lightgoldenrodyellow;
-}
-.precipitation {
-    background-color: lightgrey;
-}
-.right-block {
-    background-color: lightgreen;
-}
+
+
+
 /* MAIN BLOCK */
 
 .weather-block {
-    border-radius: 8px;
-    height: 370px;
+    border-radius: var(--border-radius);
+    height: 361px; 
+    background-color: lightsalmon;
+    margin-bottom: 8px;
+    
 }
-
-
+.weather-conditions-block {
+    background-color: lightcyan;
+    height: 88px;
+}
+.wind {
+    background-color: lightblue;
+    border-radius: var(--border-radius);
+}
+.humidity {
+    background-color: lightgoldenrodyellow;
+    border-radius: var(--border-radius);
+}
+.precipitation {
+    background-color: lightgrey;
+    border-radius: var(--border-radius);
+}
 /* FORECAST BLOCK */
 
+
+.forecast-element {
+    background-color: lightgreen;
+    border-radius: var(--border-radius);
+    margin-bottom: 8px;
+    width: 396px;
+    height: 85px;
+}
