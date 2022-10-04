@@ -34,7 +34,7 @@ export default function Weather() {
                 </div>
               </div>
               <div className="col">
-                IMAGE
+                
               </div>
             </div>
             <div className="row weather-conditions-block">

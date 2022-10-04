@@ -96,6 +96,7 @@
     font-size: 25px;
 
 }
+
 .wind, .humidity, .precipitation {
 
     border-radius: var(--border-radius);
