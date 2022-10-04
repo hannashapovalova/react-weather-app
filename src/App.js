@@ -6,10 +6,8 @@ import 'bootstrap/dist/css/bootstrap.css';
 function App() {
   return (
     <div className="App">
-      <main className="App-header">
-        <div className="container">
+      <main className="container">
         <Weather />
-        </div>
       </main>
       <footer>
         This project was coded by{" "}

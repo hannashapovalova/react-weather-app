@@ -19,3 +19,13 @@
 .right-block {
     background-color: lightgreen;
 }
+/* MAIN BLOCK */
+
+.weather-block {
+    border-radius: 8px;
+    height: 370px;
+}
+
+
+/* FORECAST BLOCK */
+
