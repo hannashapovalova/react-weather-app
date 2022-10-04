@@ -13,7 +13,7 @@ export default function Weather() {
           <input className="search-input" type="text" placeholder="Search"></input>
         </div>
         <div className="row">
-          <div className="col-8 main-block left-block">
+          <div className="col main-block left-block">
             <div className="row weather-block">
               <div className="col">
                 <div className="row">
@@ -33,7 +33,7 @@ export default function Weather() {
               </div>
             </div>
             <div className="row weather-conditions-block">
-              <div className="col-4 wind">
+              <div className="col wind">
                 <p>Wind</p>
                 <div className="row">
                   <div className="col-6">
@@ -44,7 +44,7 @@ export default function Weather() {
                   </div>
                 </div>
               </div>
-              <div className="col-4 humidity">
+              <div className="col humidity">
                 <p>Humidity</p>
                 <div className="row">
                   <div className="col-6">
@@ -55,7 +55,7 @@ export default function Weather() {
                   </div>
                 </div>
               </div>
-              <div className="col-4 precipitation">
+              <div className="col precipitation">
                 <p>Precipitation</p>
                 <div className="row">
                   <div className="col-6">
@@ -68,7 +68,7 @@ export default function Weather() {
               </div>
             </div>
           </div>
-          <div className="col-4 forecast-block right-block">
+          <div className="col forecast-block">
             <div className="row forecast-element">
               <div className="col">
                 <h2 className="forecast-date">Monday</h2>

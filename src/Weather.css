@@ -59,7 +59,9 @@
     
 
 /* MAIN BLOCK */
-
+.main-block {
+    min-width: 700px;
+}
 .weather-block {
     border-radius: var(--border-radius);
     height: 361px; 
@@ -100,7 +102,10 @@
     padding-top: 170px;
     text-align: right;
 }
-
+.weather-conditions-block {
+    display: flex;
+    flex-direction: row;
+}
 .wind, .humidity, .precipitation {
 
     border-radius: var(--border-radius);
@@ -111,6 +116,8 @@
     letter-spacing: var(--later-specing);
     font-size: 18px;
     padding-top: 10px;
+    margin-left: 8px;
+    
 }
 .conditions-value {
     padding-top: 30px;
@@ -119,7 +126,9 @@
 
 /* FORECAST BLOCK */
 
-
+.forecast-block {
+    margin-left: 8px;
+}
 .forecast-element {
     background-color: var(--block-background-color);
     border-radius: var(--border-radius);
