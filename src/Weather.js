@@ -36,13 +36,16 @@ export default function Weather() {
             </div>
             <div className="row weather-conditions-block">
               <div className="col-4 wind">
-                Wind
+                <p>Wind</p>
+                <p>4.15 m/h</p>
               </div>
               <div className="col-4 humidity">
-                Humidity
+                <p>Humidity</p>
+                <p>20%</p>
               </div>
               <div className="col-4 precipitation">
-                Precipitation
+                <p>Precipitation</p>
+                <p>2%</p>
               </div>
             </div>
           </div>

@@ -58,9 +58,6 @@
         }
     
 
-
-
-
 /* MAIN BLOCK */
 
 .weather-block {
@@ -80,6 +77,11 @@
     border: var(--block-border);
     box-shadow: var(--block-shadow);
     height: 125px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 18px;
+  
+
 }
 
 /* FORECAST BLOCK */
