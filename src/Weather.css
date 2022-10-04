@@ -3,6 +3,7 @@
     --border-radius: 8px;
     --block-border: 1px solid rgba(255, 255, 255, 0.2);
     --block-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    --later-specing: 1.50px;
 }
 
 
@@ -17,7 +18,7 @@
         text-align: center;
         color: #ffff;
         margin-bottom: 8px;
-        letter-spacing: 1.5px;
+        letter-spacing: var(--later-specing);
         text-transform: uppercase;
     }
 
@@ -44,7 +45,7 @@
 .search-input::placeholder {
             color: rgba(255, 255, 255, 0.5);
             text-transform: uppercase;
-            letter-spacing: 1.5px;
+            letter-spacing: var(--later-specing);
         }
 
 .search-input:hover,
@@ -68,8 +69,12 @@
     backdrop-filter: blur(8px);
     border: var(--block-border);
     margin-bottom: 8px;
+    letter-spacing: var(--later-specing);
 }
+.current-temperature {
+    
 
+}
 .wind, .humidity, .precipitation {
 
     border-radius: var(--border-radius);
@@ -78,10 +83,9 @@
     box-shadow: var(--block-shadow);
     height: 125px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: var(--later-specing);
     font-size: 18px;
   
-
 }
 
 /* FORECAST BLOCK */
@@ -98,4 +102,5 @@
     height: 92.5px;
     box-shadow: var(--block-shadow);
     border: var(--block-border);
+    letter-spacing: var(--later-specing);
 }
