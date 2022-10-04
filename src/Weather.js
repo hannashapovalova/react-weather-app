@@ -1,4 +1,5 @@
 import './Weather.css';
+import { WiDaySunny } from 'weather-icons-react';
 
 export default function Weather() {
     return (
@@ -9,14 +10,6 @@ export default function Weather() {
           </p>
           <input className="search-input" type="text" placeholder="Search"></input>
         </div>
-        {/* <div className="row search-block">
-          <form className="search-form">
-            <input type="search" placeholder="Enter a city" className="search-input">
-            </input>
-            <input type="submit" value="Search" className="search-button">
-            </input>
-          </form>
-        </div> */}
         <div className="row">
           <div className="col-8 main-block left-block">
             <div className="row weather-block">
