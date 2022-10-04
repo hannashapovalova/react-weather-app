@@ -1,5 +1,7 @@
 import './Weather.css';
-import { WiDaySunny } from 'weather-icons-react';
+import Icons from "./Icons";
+
+
 
 export default function Weather() {
     return (
@@ -26,8 +28,8 @@ export default function Weather() {
                   <h2 className="current-description">Clear Sky</h2>
                 </div>
               </div>
-              <div className="col">
-                
+              <div className="col current-icon">
+               <Icons icon="CLEAR_DAY" color="white" size="120" />
               </div>
             </div>
             <div className="row weather-conditions-block">
@@ -51,8 +53,8 @@ export default function Weather() {
                 <h2 className="forecast-date">Monday</h2>
                 <p className="forecast-temperature">24 °C</p>
               </div>
-              <div className="col">
-                <p>IMAGE</p>
+              <div className="col forecast-icon">
+                <Icons icon="PARTLY_CLOUDY_DAY" color="white" size="65" />
               </div>
             </div>
             <div className="row forecast-element">
@@ -60,8 +62,8 @@ export default function Weather() {
                 <h2 className="forecast-date">Monday</h2>
                 <p className="forecast-temperature">24 °C</p>
               </div>
-              <div className="col">
-                <p>IMAGE</p>
+              <div className="col forecast-icon">
+                <Icons icon="CLEAR_DAY" color="white" size="65" />
               </div>
             </div>
             <div className="row forecast-element">
@@ -69,8 +71,8 @@ export default function Weather() {
                 <h2 className="forecast-date">Monday</h2>
                 <p className="forecast-temperature">24 °C</p>
               </div>
-              <div className="col">
-                <p>IMAGE</p>
+              <div className="col forecast-icon">
+                <Icons icon="CLOUDY" color="white" size="65" />
               </div>
             </div>
             <div className="row forecast-element">
@@ -78,8 +80,8 @@ export default function Weather() {
                 <h2 className="forecast-date">Monday</h2>
                 <p className="forecast-temperature">24 °C</p>
               </div>
-              <div className="col">
-                <p>IMAGE</p>
+              <div className="col forecast-icon">
+                <Icons icon="RAIN" color="white" size="65" />
               </div>
             </div>
             <div className="row forecast-element">
@@ -87,8 +89,8 @@ export default function Weather() {
                 <h2 className="forecast-date">Monday</h2>
                 <p className="forecast-temperature">24 °C</p>
               </div>
-              <div className="col">
-                <p>IMAGE</p>
+              <div className="col forecast-icon">
+                <Icons icon="PARTLY_CLOUDY_DAY" color="white" size="65" />
               </div>
             </div>
           </div>

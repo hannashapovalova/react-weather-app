@@ -96,6 +96,10 @@
     font-size: 25px;
 
 }
+.current-icon {
+    padding-top: 170px;
+    text-align: right;
+}
 
 .wind, .humidity, .precipitation {
 
@@ -132,4 +136,8 @@
 .forecast-temperature {
     font-size: 18px;
     padding-top: 10px;
+}
+.forecast-icon {
+    text-align: right;
+    padding-top: 5px;
 }
