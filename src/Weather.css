@@ -1,5 +1,8 @@
 :root {
+    --block-background-color: rgba(255, 255, 255, 0.2);
     --border-radius: 8px;
+    --block-border: 1px solid rgba(255, 255, 255, 0.2);
+    --block-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -14,33 +17,33 @@
 .weather-block {
     border-radius: var(--border-radius);
     height: 361px; 
-    background-color: lightsalmon;
+    background: var(--block-background-color);
+    box-shadow: var(--block-shadow);
+    backdrop-filter: blur(8px);
+    border: var(--block-border);
     margin-bottom: 8px;
     
 }
 .weather-conditions-block {
-    background-color: lightcyan;
+
     height: 88px;
 }
-.wind {
-    background-color: lightblue;
+.wind, .humidity, .precipitation {
+
     border-radius: var(--border-radius);
+    background-color: var(--block-background-color);
+    border: var(--block-border);
+    box-shadow: var(--block-shadow);
 }
-.humidity {
-    background-color: lightgoldenrodyellow;
-    border-radius: var(--border-radius);
-}
-.precipitation {
-    background-color: lightgrey;
-    border-radius: var(--border-radius);
-}
+
 /* FORECAST BLOCK */
 
 
 .forecast-element {
-    background-color: lightgreen;
+    background-color: var(--block-background-color);
     border-radius: var(--border-radius);
     margin-bottom: 8px;
     width: 396px;
     height: 85px;
+    box-shadow: var(--block-shadow);
 }
