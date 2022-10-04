@@ -72,7 +72,7 @@
     margin-bottom: 8px;
     letter-spacing: var(--later-specing);
     padding: 20px;
- 
+    
 }
 .temperature-block {
     padding-top: 65px;
@@ -116,8 +116,10 @@
     letter-spacing: var(--later-specing);
     font-size: 18px;
     padding-top: 10px;
+}
+.humidity,
+.precipitation {
     margin-left: 8px;
-    
 }
 .conditions-value {
     padding-top: 30px;
