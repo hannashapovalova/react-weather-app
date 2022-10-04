@@ -35,15 +35,36 @@ export default function Weather() {
             <div className="row weather-conditions-block">
               <div className="col-4 wind">
                 <p>Wind</p>
-                <p className="conditions-value">4.15 m/h</p>
+                <div className="row">
+                  <div className="col-6">
+                    <p className="conditions-value">4.15 m/h</p>
+                  </div>
+                  <div className="col-6">
+                     <Icons icon="WIND" color="white" size="65" />
+                  </div>
+                </div>
               </div>
               <div className="col-4 humidity">
                 <p>Humidity</p>
-                <p className="conditions-value">20%</p>
+                <div className="row">
+                  <div className="col-6">
+                    <p className="conditions-value">20%</p>
+                  </div>
+                  <div className="col-6">
+                    <Icons icon="FOG" color="white" size="65" />
+                  </div>
+                </div>
               </div>
               <div className="col-4 precipitation">
                 <p>Precipitation</p>
-                <p className="conditions-value">2%</p>
+                <div className="row">
+                  <div className="col-6">
+                    <p className="conditions-value">2%</p>
+                  </div>
+                  <div className="col-6">
+                    <Icons icon="RAIN" color="white" size="65" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
