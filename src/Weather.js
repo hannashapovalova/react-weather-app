@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './Weather.css';
 import Icons from "./Icons";
+import CurrentDate from "./CurrentDate";
 import axios from "axios";
 
 
@@ -18,7 +19,7 @@ export default function Weather(props) {
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
       city: response.data.name,
-      date: "Tuesday 12:12",
+      date: new Date (response.data.dt * 1000),
       iconUrl: ""
     });
   }
@@ -45,7 +46,7 @@ export default function Weather(props) {
                   {weatherData.city}
                 </h1>
                 <h2 className="current-date">
-                  {weatherData.date}
+                  <CurrentDate date={weatherData.date}/>
                 </h2>
               </div>
               <div className="row">
