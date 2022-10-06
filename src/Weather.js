@@ -6,17 +6,24 @@ import axios from "axios";
 
 
 
-export default function Weather() {
-  const [ready, setReady] = useState(false);
-  const [temperature, setTemperature] = useState(null);
+export default function Weather(props) {
+
+  const [weatherData, setWeatherData] = useState({ready: false});
   
   function handleResponse(response) {
-    setTemperature(response.data.main.temp);
-    setReady(true);
+    setWeatherData({
+      ready: true,
+      temperature: response.data.main.temp,
+      description: response.data.weather[0].description,
+      wind: response.data.wind.speed,
+      humidity: response.data.main.humidity,
+      city: response.data.name,
+      date: "Tuesday 12:12",
+      iconUrl: ""
+    });
   }
   
-
-  if (ready) {
+  if (weatherData.ready) {
     return (
     <div>
       <div className="search-container">
@@ -35,23 +42,23 @@ export default function Weather() {
             <div className="col">
               <div className="row">
                 <h1 className="current-city">
-                  Funchal
+                  {weatherData.city}
                 </h1>
                 <h2 className="current-date">
-                  Tuesday 12:12
+                  {weatherData.date}
                 </h2>
               </div>
               <div className="row">
                 <div className="temperature-block">
                   <div className="current-temperature">
-                    {temperature} ° 
+                    {Math.round(weatherData.temperature)} ° 
                   </div>
                   <div className="unit">
                     C | F
                   </div>
                 </div>
                   <h2 className="current-description">
-                    Clear Sky
+                    {weatherData.description}
                   </h2>
               </div>
             </div>
@@ -70,7 +77,7 @@ export default function Weather() {
               <div className="row">
                 <div className="col-6">
                   <p className="conditions-value">
-                    4.15 m/h
+                    {weatherData.wind} m/h
                   </p>
                 </div>
                 <div className="col-6">
@@ -88,7 +95,7 @@ export default function Weather() {
               <div className="row">
                 <div className="col-6">
                   <p className="conditions-value">
-                    20%
+                    {weatherData.humidity}%
                   </p>
                 </div>
                 <div className="col-6">
@@ -211,8 +218,7 @@ export default function Weather() {
   } else {
     const apiKey = "238f6bbecd817b0849866bc3d0d8b987";
     const units = "metric";
-    let city = "Kyiv";
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.dafaultCity}&appid=${apiKey}&units=${units}`;
     axios.get(apiUrl).then(handleResponse);
 
     return "Loading...";
