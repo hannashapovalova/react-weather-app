@@ -1,10 +1,23 @@
+import React, {useState} from 'react';
 import './Weather.css';
 import Icons from "./Icons";
+import axios from "axios";
+
 
 
 
 export default function Weather() {
-  return (
+  const [ready, setReady] = useState(false);
+  const [temperature, setTemperature] = useState(null);
+  
+  function handleResponse(response) {
+    setTemperature(response.data.main.temp);
+    setReady(true);
+  }
+  
+
+  if (ready) {
+    return (
     <div>
       <div className="search-container">
         <p className="search-title">
@@ -31,7 +44,7 @@ export default function Weather() {
               <div className="row">
                 <div className="temperature-block">
                   <div className="current-temperature">
-                    22 ° 
+                    {temperature} ° 
                   </div>
                   <div className="unit">
                     C | F
@@ -194,4 +207,14 @@ export default function Weather() {
       </div>
     </div>
     );
+
+  } else {
+    const apiKey = "238f6bbecd817b0849866bc3d0d8b987";
+    const units = "metric";
+    let city = "Kyiv";
+    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+    axios.get(apiUrl).then(handleResponse);
+
+    return "Loading...";
+  }
 }
