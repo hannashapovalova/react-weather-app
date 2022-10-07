@@ -2,6 +2,7 @@ import React from 'react';
 import Icons from './Icons';
 import ConstantIcons from './ConstantIcons';
 import CurrentDate from './CurrentDate';
+import CurrentTemperature from './CurrentTemperature';
 
 export default function WeatherInfo(props) {
     return (
@@ -18,14 +19,7 @@ export default function WeatherInfo(props) {
                 </h2>
               </div>
               <div className="row">
-                <div className="temperature-block">
-                  <div className="current-temperature">
-                    {Math.round(props.data.temperature)} ° 
-                  </div>
-                  <div className="unit">
-                    C | F
-                  </div>
-                </div>
+                <CurrentTemperature celsius={props.data.temperature}/>
                   <h2 className="current-description">
                     {props.data.description}
                   </h2>
