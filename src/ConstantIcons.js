@@ -13,7 +13,7 @@ export default function ConstantIcons(props) {
       <ReactAnimatedWeather
         icon={defaults.icon}
         color="white"
-        size={defaults.size}
+        size={props.size}
         animate={true}
       />
     </div>

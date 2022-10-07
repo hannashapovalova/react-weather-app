@@ -3,6 +3,7 @@ import Icons from './Icons';
 import ConstantIcons from './ConstantIcons';
 import CurrentDate from './CurrentDate';
 import CurrentTemperature from './CurrentTemperature';
+import Forecast from './Forecast';
 
 export default function WeatherInfo(props) {
     return (
@@ -85,86 +86,7 @@ export default function WeatherInfo(props) {
             </div>
           </div>
         </div>
-
-            {/* FORECAST BLOCK */}
-
-        <div className="col forecast-block">
-          <div className="row forecast-element">
-            <div className="col">
-              <h2 className="forecast-date">
-                Monday
-              </h2>
-              <p className="forecast-temperature">
-                24 °C
-              </p>
-            </div>
-            <div className="col forecast-icon">
-                <ConstantIcons
-                 icon="PARTLY_CLOUDY_DAY" 
-                 size="65" />
-            </div>
-          </div>
-          <div className="row forecast-element">
-            <div className="col">
-              <h2 className="forecast-date">
-                Monday
-              </h2>
-              <p className="forecast-temperature">
-                24 °C
-              </p>
-            </div>
-            <div className="col forecast-icon">
-              <ConstantIcons
-               icon="CLEAR_DAY" 
-               size="65" />
-            </div>
-          </div>
-          <div className="row forecast-element">
-            <div className="col">
-              <h2 className="forecast-date">
-              Monday
-              </h2>
-              <p className="forecast-temperature">
-                24 °C
-              </p>
-            </div>
-            <div className="col forecast-icon">
-              <ConstantIcons
-               icon="CLOUDY" 
-               size="65" />
-            </div>
-          </div>
-          <div className="row forecast-element">
-            <div className="col">
-              <h2 className="forecast-date">
-                Monday
-              </h2>
-              <p className="forecast-temperature">
-                24 °C
-              </p>
-            </div>
-            <div className="col forecast-icon">
-              <ConstantIcons
-               icon="RAIN"  
-               size="65" />
-            </div>
-          </div>
-          <div className="row forecast-element">
-            <div className="col">
-              <h2 className="forecast-date">
-                Monday
-              </h2>
-              <p className="forecast-temperature">
-                24 °C
-              </p>
-            </div>
-            <div className="col forecast-icon">
-              <ConstantIcons
-               icon="PARTLY_CLOUDY_DAY" 
-               size="65" />
-            </div>
-          </div>
-        </div>
+        <Forecast />
       </div>
     );
 }

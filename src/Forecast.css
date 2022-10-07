@@ -1,0 +1,38 @@
+:root {
+    --block-background-color: rgba(255, 255, 255, 0.2);
+    --font-color: white;
+    --border-radius: 8px;
+    --block-border: 1px solid rgba(255, 255, 255, 0.2);
+    --block-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    --later-specing: 1.50px;
+}
+
+.forecast-block {
+    margin-left: 8px;
+}
+
+.forecast-element {
+    background-color: var(--block-background-color);
+    border-radius: var(--border-radius);
+    margin-bottom: 8px;
+    width: 396px;
+    height: 92.5px;
+    box-shadow: var(--block-shadow);
+    border: var(--block-border);
+    letter-spacing: var(--later-specing);
+    padding: 8px;
+}
+
+.forecast-date {
+    font-size: 25px;
+}
+
+.forecast-temperature {
+    font-size: 18px;
+    padding-top: 10px;
+}
+
+.forecast-icon {
+    text-align: right;
+    padding-top: 5px;
+}
