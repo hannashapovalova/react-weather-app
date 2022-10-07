@@ -1,5 +1,6 @@
 import React from 'react';
 import Icons from './Icons';
+import ConstantIcons from './ConstantIcons';
 import CurrentDate from './CurrentDate';
 
 export default function WeatherInfo(props) {
@@ -32,8 +33,7 @@ export default function WeatherInfo(props) {
             </div>
             <div className="col current-icon">
               <Icons
-               icon="CLEAR_DAY" 
-               color="white" 
+               code={props.data.icon} 
                size="120" />
             </div>
           </div>
@@ -49,9 +49,8 @@ export default function WeatherInfo(props) {
                   </p>
                 </div>
                 <div className="col-6">
-                  <Icons
-                   icon="WIND" 
-                   color="white" 
+                  <ConstantIcons
+                   icon="WIND"  
                    size="65" />
                 </div>
               </div>
@@ -67,9 +66,8 @@ export default function WeatherInfo(props) {
                   </p>
                 </div>
                 <div className="col-6">
-                  <Icons
-                   icon="FOG" 
-                   color="white" 
+                  <ConstantIcons
+                   icon="FOG"  
                    size="65" />
                 </div>
               </div>
@@ -85,9 +83,8 @@ export default function WeatherInfo(props) {
                   </p>
                 </div>
                 <div className="col-6">
-                  <Icons
+                  <ConstantIcons
                    icon="RAIN" 
-                   color="white" 
                    size="65" />
                 </div>
               </div>
@@ -108,9 +105,8 @@ export default function WeatherInfo(props) {
               </p>
             </div>
             <div className="col forecast-icon">
-                <Icons
+                <ConstantIcons
                  icon="PARTLY_CLOUDY_DAY" 
-                 color="white" 
                  size="65" />
             </div>
           </div>
@@ -124,9 +120,8 @@ export default function WeatherInfo(props) {
               </p>
             </div>
             <div className="col forecast-icon">
-              <Icons
+              <ConstantIcons
                icon="CLEAR_DAY" 
-               color="white" 
                size="65" />
             </div>
           </div>
@@ -140,9 +135,8 @@ export default function WeatherInfo(props) {
               </p>
             </div>
             <div className="col forecast-icon">
-              <Icons
+              <ConstantIcons
                icon="CLOUDY" 
-               color="white" 
                size="65" />
             </div>
           </div>
@@ -156,9 +150,8 @@ export default function WeatherInfo(props) {
               </p>
             </div>
             <div className="col forecast-icon">
-              <Icons
-               icon="RAIN" 
-               color="white" 
+              <ConstantIcons
+               icon="RAIN"  
                size="65" />
             </div>
           </div>
@@ -172,9 +165,8 @@ export default function WeatherInfo(props) {
               </p>
             </div>
             <div className="col forecast-icon">
-              <Icons
+              <ConstantIcons
                icon="PARTLY_CLOUDY_DAY" 
-               color="white" 
                size="65" />
             </div>
           </div>
