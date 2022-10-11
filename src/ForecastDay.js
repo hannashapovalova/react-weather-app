@@ -31,7 +31,7 @@ export default function ForecastDay(props) {
 
   }
     return (
-        <div className="row forecast-element">
+          <div className="row forecast-element">
             <div className="col">
               <h2 className="forecast-date">
                 {dayOfWeek()}
