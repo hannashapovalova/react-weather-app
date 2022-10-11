@@ -52,6 +52,5 @@ export default function CurrentTemperature(props) {
     </div>
     );
   }
-  
 }
 

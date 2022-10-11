@@ -13,7 +13,6 @@ export default function ForecastDay(props) {
     return `${temperature} °C `;
   }
 
-
   function dayOfWeek() {
     let date = new Date(props.data.dt * 1000);
     let day = date.getDay();
@@ -28,8 +27,9 @@ export default function ForecastDay(props) {
     ];
 
     return days[day];
-
+    
   }
+
     return (
           <div className="row forecast-element">
             <div className="col">
@@ -47,5 +47,4 @@ export default function ForecastDay(props) {
             </div>
           </div>
     );
-    
 }

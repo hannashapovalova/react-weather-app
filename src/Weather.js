@@ -4,9 +4,6 @@ import WeatherInfo from './WeatherInfo';
 import Forecast from './Forecast';
 import axios from "axios";
 
-
-
-
 export default function Weather(props) {
 
   const [weatherData, setWeatherData] = useState({ready: false});
@@ -44,7 +41,7 @@ export default function Weather(props) {
   
   if (weatherData.ready) {
     return (
-   <div className="row">
+    <div className="row">
       <div className="search-container">
         <p className="search-title">
          Type city here...
@@ -64,7 +61,7 @@ export default function Weather(props) {
       </div>
       <WeatherInfo  data={weatherData}/>
       <Forecast coordinates={weatherData.coordinates}/>
-  </div>   
+    </div>   
     );
 
   } else {
