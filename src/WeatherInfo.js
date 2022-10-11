@@ -3,11 +3,10 @@ import Icons from './Icons';
 import ConstantIcons from './ConstantIcons';
 import CurrentDate from './CurrentDate';
 import CurrentTemperature from './CurrentTemperature';
-import Forecast from './Forecast';
+
 
 export default function WeatherInfo(props) {
     return (
-    <div className="row">
         <div className="col main-block left-block">
           <div className="row weather-block">
             <div className="col">
@@ -86,7 +85,5 @@ export default function WeatherInfo(props) {
             </div>
           </div>
         </div>
-        <Forecast />
-      </div>
     );
 }
