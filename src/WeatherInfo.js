@@ -42,7 +42,7 @@ export default function WeatherInfo(props) {
                     {props.data.wind} m/h
                   </p>
                 </div>
-                <div className="col-6">
+                <div className="col-6 conditions-icon">
                   <ConstantIcons
                    icon="WIND"  
                    size="65" />
@@ -59,7 +59,7 @@ export default function WeatherInfo(props) {
                     {props.data.humidity}%
                   </p>
                 </div>
-                <div className="col-6">
+                <div className="col-6 conditions-icon">
                   <ConstantIcons
                    icon="FOG"  
                    size="65" />
@@ -76,7 +76,7 @@ export default function WeatherInfo(props) {
                     {props.data.pressure} hPa
                   </p>
                 </div>
-                <div className="col-6">
+                <div className="col-6 conditions-icon">
                   <ConstantIcons
                    icon="RAIN" 
                    size="65" />

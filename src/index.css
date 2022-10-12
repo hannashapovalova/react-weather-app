@@ -28,3 +28,9 @@ code {
     background-position: 0% 50%;
   }
 }
+
+@media (max-width: 900px) {
+  body {
+    background-size: 100%;
+  }
+}
