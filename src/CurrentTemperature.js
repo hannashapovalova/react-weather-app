@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import './Weather.css';
 
 
 export default function CurrentTemperature(props) {
@@ -27,6 +28,7 @@ export default function CurrentTemperature(props) {
       <div className="unit">
         C | 
         <a
+        className="unit"
          href="/"
          onClick={convertToFahrenheit}
         >
@@ -43,6 +45,7 @@ export default function CurrentTemperature(props) {
       </div>
       <div className="unit">
         <a
+         className="unit"
          href="/"
          onClick={convertToCelsius}>
           C{" "}

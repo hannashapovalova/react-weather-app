@@ -7,7 +7,7 @@ import CurrentTemperature from './CurrentTemperature';
 
 export default function WeatherInfo(props) {
     return (
-        <div className="col main-block left-block">
+        <div className="col main-block">
           <div className="row weather-block">
             <div className="col">
               <div className="row">

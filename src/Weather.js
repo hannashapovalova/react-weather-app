@@ -41,7 +41,7 @@ export default function Weather(props) {
   
   if (weatherData.ready) {
     return (
-    <div className="row">
+    <div className="row weather-app">
       <div className="search-container">
         <p className="search-title">
          Type city here...
@@ -50,13 +50,14 @@ export default function Weather(props) {
           <input
            className="search-input" 
            type="search" 
-           placeholder="Search"
+           placeholder="Search city..."
            onChange={handleCityChange}>
           </input>
-          <input
+          <button
+           className="search-button"
            type="submit"
-           value="Search">
-          </input> 
+           value="Search">Search
+          </button> 
         </form>
       </div>
       <WeatherInfo  data={weatherData}/>
