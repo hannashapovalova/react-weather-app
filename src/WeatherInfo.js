@@ -68,12 +68,12 @@ export default function WeatherInfo(props) {
             </div>
             <div className="col precipitation">
               <p>
-                Precipitation
+                Pressure
               </p>
               <div className="row">
                 <div className="col-6">
                   <p className="conditions-value">
-                    2%
+                    {props.data.pressure} hPa
                   </p>
                 </div>
                 <div className="col-6">
