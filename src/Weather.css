@@ -8,7 +8,6 @@
 }
 
 .weather-app {
-    margin: auto;
     width: 90%;
 }
 
@@ -86,7 +85,13 @@ form {
 }
 
 /* MAIN BLOCK */
-
+.weather-and-forecast-block {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 23px;
+    margin-left: 60px;
+}
 .main-block {
     min-width: 700px;
 }
@@ -126,10 +131,6 @@ form {
     font-size: 25px;
     color: var(--font-color);
     text-decoration: none;
-}
-
-a:hover {
-    color: orange;
 }
 
 .current-description {
