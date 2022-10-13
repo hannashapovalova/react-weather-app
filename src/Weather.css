@@ -192,14 +192,18 @@ form {
         flex-direction: column;
         margin-left: 30px;
     }
+    .current-city-and-date-block {
+        word-wrap: break-word;
+        word-break: break-all;
+    }
 
     .weather-block {
         width: 328px;
         padding: 0px;
     }
-    
+
     .temperature-block {
-        padding: 65px 0 0 0;
+        padding: 55px 0 0 0;
     }
     
     .current-temperature {

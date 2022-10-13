@@ -3,6 +3,8 @@ import Icons from './Icons';
 import ConstantIcons from './ConstantIcons';
 import CurrentDate from './CurrentDate';
 import CurrentTemperature from './CurrentTemperature';
+import './Weather.css';
+
 
 
 export default function WeatherInfo(props) {
@@ -10,7 +12,7 @@ export default function WeatherInfo(props) {
         <div className="col main-block">
           <div className="row weather-block">
             <div className="col">
-              <div className="row">
+              <div className="row current-city-and-date-block">
                 <h1 className="current-city">
                   {props.data.city}
                 </h1>

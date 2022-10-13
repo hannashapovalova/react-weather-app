@@ -31,8 +31,22 @@ code {
 
 @media (max-width: 900px) {
   body {
-    background-size: 100%;
-    background-color:blue;
+    background-size: 390px 1844px;
+    background-repeat: no-repeat;
     background-attachment: fixed;
   }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 0%;
+      }
+  
+      50% {
+        background-position: 0% 0%;
+      }
+  
+      100% {
+        background-position: 0% 0%;
+      }
+    }
 }
