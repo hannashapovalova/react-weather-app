@@ -23,7 +23,7 @@ export default function Weather(props) {
       icon: response.data.weather[0].icon,
     });
   }
-  
+
   function search() {
     const apiKey = "eeeccc029bc61d7bb2091d7e6ac16dbc";
     const units = "metric";

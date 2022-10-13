@@ -28,10 +28,11 @@ footer {
 
 @media (max-width: 900px) {
   footer {
-  text-align: center;
+  width: 300px;
+  text-align: left;
   margin: 0 auto;
   padding-top: 25px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-bottom: 25px;
+  
   }
 }

@@ -85,6 +85,7 @@ form {
 }
 
 /* MAIN BLOCK */
+
 .weather-and-forecast-block {
     display: flex;
     flex-direction: row;
@@ -172,52 +173,69 @@ form {
 }
 
 @media (max-width: 900px) {
+
+    .search-container {
+        margin-bottom: 25px;
+        }
+    
     .search-input {
-        width: 200px;
+        width: 170px;
+        font-size: 12px;
     }
-    form {
-        padding-left: 60px;
+    .search-button {
+        font-size: 12px;
+        padding: 12px 14px;
+        margin-left: 8px;
     }
+
     .weather-and-forecast-block {
         flex-direction: column;
-    }
-    .weather-conditions-block {
-        flex-direction: column;
-        width: 350px;
-
+        margin-left: 2px;
     }
 
     .weather-block {
-        width: 350px;
+        width: 328px;
         padding: 0px;
-
     }
+    
     .temperature-block {
-        padding-top: 75px;
-
+        padding: 65px 0 0 0;
     }
+    
     .current-temperature {
-        font-size: 55px;
+        font-size: 45px;
     }
+    
     .unit {
         font-size: 20px;
     }
+    
     .current-description {
         font-size: 20px;
     }
+    
     .current-icon {
         padding-top: 200px;
     }
-   
+
+    .weather-conditions-block {
+        flex-direction: column;
+        width: 328px;
+    }
+
+    .wind { 
+        margin-bottom: 8px;
+    }
+
     .humidity,
     .precipitation {
         margin-left: 0px;
-        margin-top: 8px;
+        margin-bottom: 8px;
     }
-    .conditions-icon {
-    text-align: right;
-}
 
+    .conditions-icon {
+        text-align: right;
+    }
 
 }
 

@@ -39,8 +39,12 @@
 
 @media (max-width: 900px) {
 
+    .forecast-block {
+        margin-left: 0;
+    }
+    
     .forecast-element {
-        width: 350px;
+        width: 328px;
     }
 
 }
